@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ih/Desktop/f#giraffe2/giraffe-serilog/GiraffeWithSerilog/src/GiraffeWithSerilog/GiraffeWithSerilog.fsproj": {}
+    "/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/GiraffeWithSerilog.fsproj": {}
   },
   "projects": {
-    "/Users/ih/Desktop/f#giraffe2/giraffe-serilog/GiraffeWithSerilog/src/GiraffeWithSerilog/GiraffeWithSerilog.fsproj": {
+    "/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/GiraffeWithSerilog.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ih/Desktop/f#giraffe2/giraffe-serilog/GiraffeWithSerilog/src/GiraffeWithSerilog/GiraffeWithSerilog.fsproj",
+        "projectUniqueName": "/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/GiraffeWithSerilog.fsproj",
         "projectName": "GiraffeWithSerilog",
-        "projectPath": "/Users/ih/Desktop/f#giraffe2/giraffe-serilog/GiraffeWithSerilog/src/GiraffeWithSerilog/GiraffeWithSerilog.fsproj",
+        "projectPath": "/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/GiraffeWithSerilog.fsproj",
         "packagesPath": "/Users/ih/.nuget/packages/",
-        "outputPath": "/Users/ih/Desktop/f#giraffe2/giraffe-serilog/GiraffeWithSerilog/src/GiraffeWithSerilog/obj/",
+        "outputPath": "/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -20,25 +20,19 @@
           "/Users/ih/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netcoreapp3.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "netcoreapp3.0": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
+        "netcoreapp3.0": {
           "dependencies": {
             "FSharp.Core": {
               "target": "Package",
@@ -48,14 +42,11 @@
               "target": "Package",
               "version": "[3.4.*, )"
             },
-            "Microsoft.AspNetCore.App": {
-              "target": "Package",
-              "version": "[2.1.*, )"
-            },
             "Microsoft.NETCore.App": {
+              "include": "None",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[3.0.0-preview7-27912-14, )",
               "autoReferenced": true
             },
             "Serilog": {
@@ -80,10 +71,23 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          }
         }
       }
     }

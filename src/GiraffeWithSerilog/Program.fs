@@ -6,11 +6,13 @@ open Microsoft.AspNetCore.Builder
 open Microsoft.AspNetCore.Cors.Infrastructure
 open Microsoft.AspNetCore.Hosting
 open Microsoft.Extensions.DependencyInjection
+open Microsoft.Extensions.Hosting // IHostEnvironment
 open Giraffe
 
 open Serilog
 open Serilog.Events
 open Serilog.Formatting.Json
+
 
 // ---------------------------------
 // Models
@@ -71,8 +73,9 @@ let webApp =
 // Error handler
 // ---------------------------------
 
-// Have to fix ILogger and Core.Logger mismatch
-let errorHandler (ex : Exception) (logger) =
+open Microsoft.Extensions.Logging
+let errorHandler (ex : Exception) (logger : ILogger) =
+    logger.LogError(ex, "An unhandled exception has occurred while executing the request.")
     clearResponse >=> setStatusCode 500 >=> text ex.Message
         
 // ---------------------------------
@@ -86,8 +89,8 @@ let configureCors (builder : CorsPolicyBuilder) =
            |> ignore
 
 
-let configureLogging =
-    LoggerConfiguration() 
+Log.Logger <-
+    LoggerConfiguration()
         .MinimumLevel.Debug()
         .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
         .Enrich.FromLogContext()
@@ -95,11 +98,9 @@ let configureLogging =
         .WriteTo.RollingFile(JsonFormatter(), "log-{Date}.log")
         .CreateLogger()
 
-Log.Logger <- configureLogging
-
 
 let configureApp (app : IApplicationBuilder) =
-    let env = app.ApplicationServices.GetService<IHostingEnvironment>()
+    let env = app.ApplicationServices.GetService<IHostEnvironment>()
     (match env.IsDevelopment() with
     | true  -> app.UseDeveloperExceptionPage()
     | false -> app.UseGiraffeErrorHandler errorHandler)
@@ -118,6 +119,8 @@ let configureServices (services : IServiceCollection) =
 let main _ =
     let contentRoot = Directory.GetCurrentDirectory()
     let webRoot     = Path.Combine(contentRoot, "WebRoot")
+    Log.Information "Starting Application..."
+    
     WebHostBuilder()
         .UseKestrel()
         .UseContentRoot(contentRoot)

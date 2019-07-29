@@ -10,3 +10,15 @@
 /Users/ih/Desktop/f#giraffe2/giraffe-serilog/GiraffeWithSerilog/src/GiraffeWithSerilog/obj/Debug/netcoreapp2.1/GiraffeWithSerilog.AssemblyInfo.fs
 /Users/ih/Desktop/f#giraffe2/giraffe-serilog/GiraffeWithSerilog/src/GiraffeWithSerilog/obj/Debug/netcoreapp2.1/GiraffeWithSerilog.dll
 /Users/ih/Desktop/f#giraffe2/giraffe-serilog/GiraffeWithSerilog/src/GiraffeWithSerilog/obj/Debug/netcoreapp2.1/GiraffeWithSerilog.pdb
+/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/bin/Debug/netcoreapp2.1/WebRoot/main.css
+/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/bin/Debug/netcoreapp2.1/web.config
+/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/bin/Debug/netcoreapp2.1/GiraffeWithSerilog.deps.json
+/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/bin/Debug/netcoreapp2.1/GiraffeWithSerilog.runtimeconfig.json
+/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/bin/Debug/netcoreapp2.1/GiraffeWithSerilog.runtimeconfig.dev.json
+/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/bin/Debug/netcoreapp2.1/GiraffeWithSerilog.dll
+/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/bin/Debug/netcoreapp2.1/GiraffeWithSerilog.pdb
+/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/obj/Debug/netcoreapp2.1/GiraffeWithSerilog.fsprojAssemblyReference.cache
+/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/obj/Debug/netcoreapp2.1/GiraffeWithSerilog.AssemblyInfoInputs.cache
+/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/obj/Debug/netcoreapp2.1/GiraffeWithSerilog.AssemblyInfo.fs
+/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/obj/Debug/netcoreapp2.1/GiraffeWithSerilog.dll
+/Users/ih/Desktop/F#-GIRAFFE/giraffe-with-serilog/src/GiraffeWithSerilog/obj/Debug/netcoreapp2.1/GiraffeWithSerilog.pdb
