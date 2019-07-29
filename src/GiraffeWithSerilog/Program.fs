@@ -7,6 +7,7 @@ open Microsoft.AspNetCore.Cors.Infrastructure
 open Microsoft.AspNetCore.Hosting
 open Microsoft.Extensions.DependencyInjection
 open Microsoft.Extensions.Hosting // IHostEnvironment
+
 open Giraffe
 
 open Serilog
